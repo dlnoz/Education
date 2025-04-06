@@ -1,0 +1,96 @@
+.site-header{
+    background-color: $color-blue;
+    padding: 16px 0;
+
+    @media (max-width:730px){
+        padding: 10px 0;
+    }
+
+    .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: $color-blue;
+        top: 0;
+        right: -100%;
+        padding: 13px 0;
+        transition: all 0.3s;
+
+        &__top-wrapper{
+            @include Display($ITEMS:center, $SPACE:space-between, $GAP:0px);
+            margin-bottom: 43px;
+
+            button{
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        &__links-wrapper{
+            @include Display($ITEMS:start, $SPACE:start, $GAP:15px);
+            flex-direction: column;
+            padding: 12px;
+
+            a{
+                @include TextStyle($FW:500, $FS:18px, $LH:100%, $LS:0%, $CLR:$color-white);              
+            }
+
+        }
+    }
+
+    .show{
+        right: 0;
+    }
+}
+.header{
+    @include Display($ITEMS:center, $SPACE:space-between, $GAP:0px);
+    &__logo-link{
+        img{
+            @media (max-width:730px){
+                width: 80px;
+                height: 57px;
+            }
+        }
+    }
+    &__navbar{
+        @include Display($ITEMS:center, $SPACE:start, $GAP:35px);
+
+        a{
+            @include TextStyle($FW:500, $FS:24px, $LH:100%, $LS:0%, $CLR:$color-white);
+        }
+
+        @media (max-width: 1114px){
+            display: none;
+        }
+
+    }
+    &__btns_wrapper{
+        @include Display($ITEMS:center, $SPACE:start, $GAP:15px);
+
+    }
+    &__contact-btn{
+        @include ButtonStyle($btnClr: $color-black, $btnBg: $color-white, $btnBorderClr: transparent);
+
+        @media (max-width: 730px){
+            display: none;
+        }
+    }
+    &__mobile-phone-img{
+        border: none;
+        background-color: transparent;
+        display: none;
+
+        @media (max-width: 730px){
+            display: block;
+        }
+    }
+    &__menu-btn{
+        border: none;
+        background-color: transparent;
+        display: none;
+
+        @media (max-width: 1114px){
+            display: block;
+        }
+    }
+}
