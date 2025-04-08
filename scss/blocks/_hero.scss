@@ -1,0 +1,20 @@
+.hero{
+    display: flex;
+}
+
+
+.hero__content-title{
+    @include TextStyle($FW:700, $FS:40px, $LH:100%, $LS:0%, $CLR:$color-black);  
+}
+
+.hero__content p{
+    @include TextStyle($FW:400, $FS:18px, $LH:100%, $LS:0%, $CLR:$color-black);  
+}
+
+.hero__content-call-btn{
+    @include ButtonStyle($btnClr:$color-white, $btnBg:$color-blue, $btnBorderClr: transparent);
+    @include TextStyle($FW:500, $FS:32px, $LH:100%, $LS:0%, $CLR:$color-white);        
+}
+.hero__content-try-btn{
+    @include ButtonStyle($btnClr: $color-black, $btnBg: $color-white, $btnBorderClr: $color-blue);
+}

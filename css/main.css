@@ -31,7 +31,7 @@ body {
   font-family: "Livvic", sans-serif;
 }
 
-.container {
+.containers {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 13px;
@@ -118,7 +118,7 @@ body {
     display: none;
   }
 }
-.header__btns_wrapper {
+.header__btns-wrapper {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -160,4 +160,58 @@ body {
   .header__menu-btn {
     display: block;
   }
+}
+
+.hero {
+  display: flex;
+}
+
+.hero__content-title {
+  font-weight: 700;
+  font-family: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  transition: all 0.3s;
+}
+
+.hero__content p {
+  font-weight: 400;
+  font-family: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  transition: all 0.3s;
+}
+
+.hero__content-call-btn {
+  font-weight: 500;
+  font-family: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  transition: all 0.3s;
+  padding: 11px 35px;
+  border-radius: 10px;
+  background-color: #5855E7;
+  border: 3px solid transparent;
+  font-weight: 500;
+  font-family: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+
+.hero__content-try-btn {
+  font-weight: 500;
+  font-family: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  transition: all 0.3s;
+  padding: 11px 35px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 3px solid #5855E7;
 }/*# sourceMappingURL=main.css.map */

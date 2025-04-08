@@ -4,7 +4,7 @@
 
     @media (max-width:730px){
         padding: 10px 0;
-    }
+        }
 
     .menu{
         position: fixed;
@@ -64,7 +64,7 @@
         }
 
     }
-    &__btns_wrapper{
+    &__btns-wrapper{
         @include Display($ITEMS:center, $SPACE:start, $GAP:15px);
 
     }
